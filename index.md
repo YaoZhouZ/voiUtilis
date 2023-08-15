@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "Utilities"
-  text: "个人工具函数库"
+  name: "VoiUtils"
+  text: "TypeScript通用工具函数库"
   tagline: My great project tagline
   actions:
     - theme: brand
