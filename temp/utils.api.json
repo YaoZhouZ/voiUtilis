@@ -232,12 +232,73 @@
         },
         {
           "kind": "Function",
-          "canonicalReference": "@voi/utils!is_number:function(1)",
-          "docComment": "/**\n * 函数“is_number”检查给定值是否是有限数。\n *\n * @param n - 参数“n”可以是任何类型的值。\n *\n * @returns 一个布尔值。\n */\n",
+          "canonicalReference": "@voi/utils!is:function(1)",
+          "docComment": "/**\n * 检查值value是否属于特定类型type\n *\n * @param value - 要检查的值\n *\n * @param type - 一个字符串，表示要检查的值的类型\n *\n * @returns {boolean} 如果value为type类型,那么返回true,否则返回false\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "declare function is_number(n: "
+              "text": "declare function is(value: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ", type: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/is.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            },
+            {
+              "parameterName": "type",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "is"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@voi/utils!isArray:function(1)",
+          "docComment": "/**\n * 检查值是否为数组\n *\n * @param val - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function isArray(val: "
             },
             {
               "kind": "Content",
@@ -249,8 +310,590 @@
             },
             {
               "kind": "Reference",
-              "text": "n",
-              "canonicalReference": "@voi/utils!~n"
+              "text": "val",
+              "canonicalReference": "@voi/utils!~val"
+            },
+            {
+              "kind": "Content",
+              "text": " is "
+            },
+            {
+              "kind": "Reference",
+              "text": "Array",
+              "canonicalReference": "!Array:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<any>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/is.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 7
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "val",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "isArray"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@voi/utils!isAsyncFunction:function(1)",
+          "docComment": "/**\n * 检查值是否是异步函数\n *\n * @param val - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function isAsyncFunction<T = "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ">(val: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "val",
+              "canonicalReference": "@voi/utils!~val"
+            },
+            {
+              "kind": "Content",
+              "text": " is () => "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/is.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 9
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "val",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "isAsyncFunction"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@voi/utils!isBoolean:function(1)",
+          "docComment": "/**\n * 检查值是否为布尔类型\n *\n * @param val - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function isBoolean(val: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "val",
+              "canonicalReference": "@voi/utils!~val"
+            },
+            {
+              "kind": "Content",
+              "text": " is boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/is.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 5
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "val",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "isBoolean"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@voi/utils!isDate:function(1)",
+          "docComment": "/**\n * 检查值是否为Date类型。\n *\n * @param val - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function isDate(val: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "val",
+              "canonicalReference": "@voi/utils!~val"
+            },
+            {
+              "kind": "Content",
+              "text": " is "
+            },
+            {
+              "kind": "Reference",
+              "text": "Date",
+              "canonicalReference": "!Date:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/is.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 6
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "val",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "isDate"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@voi/utils!isDef:function(1)",
+          "docComment": "/**\n * 检查值是否已定义\n *\n * @param value - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function isDef<T = "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ">(value: "
+            },
+            {
+              "kind": "Content",
+              "text": "T"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "value",
+              "canonicalReference": "@voi/utils!~value"
+            },
+            {
+              "kind": "Content",
+              "text": " is T"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/is.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 7
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "isDef"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@voi/utils!isFunction:function(1)",
+          "docComment": "/**\n * 检查一个值是函数\n *\n * @param value - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function isFunction<T = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Function",
+              "canonicalReference": "!Function:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ">(value: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "value",
+              "canonicalReference": "@voi/utils!~value"
+            },
+            {
+              "kind": "Content",
+              "text": " is T"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/is.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 7
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "isFunction"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@voi/utils!isNotObject:function(1)",
+          "docComment": "/**\n * 检查值是否不是对象\n *\n * @param value - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function isNotObject(value: "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "boolean"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/is.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 4
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "isNotObject"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@voi/utils!isNull:function(1)",
+          "docComment": "/**\n * 检查值是否为空\n *\n * @param val - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function isNull(val: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "val",
+              "canonicalReference": "@voi/utils!~val"
+            },
+            {
+              "kind": "Content",
+              "text": " is null"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/is.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 5
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "val",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "isNull"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@voi/utils!isNullAndUnDef:function(1)",
+          "docComment": "/**\n * 检查值是否为null且未定义\n *\n * @param val - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function isNullAndUnDef(val: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "val",
+              "canonicalReference": "@voi/utils!~val"
+            },
+            {
+              "kind": "Content",
+              "text": " is null | undefined"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/is.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 5
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "val",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "isNullAndUnDef"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@voi/utils!isNullOrUnDef:function(1)",
+          "docComment": "/**\n * 检查值是否为null或未定义\n *\n * @param val - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function isNullOrUnDef(val: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "val",
+              "canonicalReference": "@voi/utils!~val"
+            },
+            {
+              "kind": "Content",
+              "text": " is null | undefined"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/is.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 5
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "val",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "isNullOrUnDef"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@voi/utils!isNumber:function(1)",
+          "docComment": "/**\n * 检查值是否为数字类型\n *\n * @param val - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function isNumber(val: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "val",
+              "canonicalReference": "@voi/utils!~val"
             },
             {
               "kind": "Content",
@@ -270,7 +913,7 @@
           "overloadIndex": 1,
           "parameters": [
             {
-              "parameterName": "n",
+              "parameterName": "val",
               "parameterTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 2
@@ -278,16 +921,16 @@
               "isOptional": false
             }
           ],
-          "name": "is_number"
+          "name": "isNumber"
         },
         {
           "kind": "Function",
-          "canonicalReference": "@voi/utils!is_object:function(1)",
-          "docComment": "/**\n * 该函数检查给定值是否是对象而不是数组。\n *\n * @param o - 任何数据类型\n *\n * @returns 布尔值\n */\n",
+          "canonicalReference": "@voi/utils!isObject:function(1)",
+          "docComment": "/**\n * 检查值是否是对象\n *\n * @param value - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "declare function is_object(o: "
+              "text": "declare function isObject(value: "
             },
             {
               "kind": "Content",
@@ -299,8 +942,8 @@
             },
             {
               "kind": "Reference",
-              "text": "o",
-              "canonicalReference": "@voi/utils!~o"
+              "text": "value",
+              "canonicalReference": "@voi/utils!~value"
             },
             {
               "kind": "Content",
@@ -308,21 +951,12 @@
             },
             {
               "kind": "Reference",
-              "text": "Exclude",
-              "canonicalReference": "!Exclude:type"
+              "text": "Record",
+              "canonicalReference": "!Record:type"
             },
             {
               "kind": "Content",
-              "text": "<object, "
-            },
-            {
-              "kind": "Reference",
-              "text": "Array",
-              "canonicalReference": "!Array:interface"
-            },
-            {
-              "kind": "Content",
-              "text": "<any>>"
+              "text": "<any, any>"
             },
             {
               "kind": "Content",
@@ -332,13 +966,13 @@
           "fileUrlPath": "dist/types/modules/is.d.ts",
           "returnTypeTokenRange": {
             "startIndex": 3,
-            "endIndex": 9
+            "endIndex": 7
           },
           "releaseTag": "Public",
           "overloadIndex": 1,
           "parameters": [
             {
-              "parameterName": "o",
+              "parameterName": "value",
               "parameterTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 2
@@ -346,7 +980,208 @@
               "isOptional": false
             }
           ],
-          "name": "is_object"
+          "name": "isObject"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@voi/utils!isPromise:function(1)",
+          "docComment": "/**\n * 检查值是否是Promise对象\n *\n * @param val - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function isPromise<T = "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": ">(val: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "val",
+              "canonicalReference": "@voi/utils!~val"
+            },
+            {
+              "kind": "Content",
+              "text": " is "
+            },
+            {
+              "kind": "Reference",
+              "text": "Promise",
+              "canonicalReference": "!Promise:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<T>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/is.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 9
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "val",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "isPromise"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@voi/utils!isString:function(1)",
+          "docComment": "/**\n * 检查值是否为字符串类型\n *\n * @param val - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function isString(val: "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "val",
+              "canonicalReference": "@voi/utils!~val"
+            },
+            {
+              "kind": "Content",
+              "text": " is string"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/is.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 3,
+            "endIndex": 5
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "val",
+              "parameterTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              },
+              "isOptional": false
+            }
+          ],
+          "name": "isString"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@voi/utils!isUnDef:function(1)",
+          "docComment": "/**\n * 检查值是否未定义或为空\n *\n * @param value - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "declare function isUnDef<T = "
+            },
+            {
+              "kind": "Content",
+              "text": "unknown"
+            },
+            {
+              "kind": "Content",
+              "text": ">(value: "
+            },
+            {
+              "kind": "Content",
+              "text": "T"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "value",
+              "canonicalReference": "@voi/utils!~value"
+            },
+            {
+              "kind": "Content",
+              "text": " is T"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "fileUrlPath": "dist/types/modules/is.d.ts",
+          "returnTypeTokenRange": {
+            "startIndex": 5,
+            "endIndex": 7
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "value",
+              "parameterTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isOptional": false
+            }
+          ],
+          "typeParameters": [
+            {
+              "typeParameterName": "T",
+              "constraintTokenRange": {
+                "startIndex": 0,
+                "endIndex": 0
+              },
+              "defaultTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "name": "isUnDef"
         },
         {
           "kind": "Function",

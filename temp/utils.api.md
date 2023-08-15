@@ -8,10 +8,52 @@
 export function arr_unique<T>(arr: T[]): T[];
 
 // @public
-export function is_number(n: any): n is number;
+export function is(value: unknown, type: string): boolean;
 
 // @public
-export function is_object(o: any): o is Exclude<object, Array<any>>;
+export function isArray(val: any): val is Array<any>;
+
+// @public
+export function isAsyncFunction<T = any>(val: unknown): val is () => Promise<T>;
+
+// @public
+export function isBoolean(val: unknown): val is boolean;
+
+// @public
+export function isDate(val: unknown): val is Date;
+
+// @public
+export function isDef<T = unknown>(value: T): value is T;
+
+// @public
+export function isFunction<T = Function>(value: unknown): value is T;
+
+// @public
+export function isNotObject(value: any): boolean;
+
+// @public
+export function isNull(val: unknown): val is null;
+
+// @public
+export function isNullAndUnDef(val: unknown): val is null | undefined;
+
+// @public
+export function isNullOrUnDef(val: unknown): val is null | undefined;
+
+// @public
+export function isNumber(val: unknown): val is number;
+
+// @public
+export function isObject(value: any): value is Record<any, any>;
+
+// @public
+export function isPromise<T = any>(val: unknown): val is Promise<T>;
+
+// @public
+export function isString(val: unknown): val is string;
+
+// @public
+export function isUnDef<T = unknown>(value: T): value is T;
 
 // @public
 export function str_ensure_prefix(s: string, prefix: string): string;
