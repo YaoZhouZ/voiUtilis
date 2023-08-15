@@ -1,0 +1,59 @@
+{
+  "name": "@voi/utils",
+  "version": "0.0.1",
+  "description": "个人工具函数库",
+  "type": "module",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts ./",
+    "dev": "rollup -c --watch",
+    "build": "rollup -c",
+    "test": "vitest",
+    "doc": "api-extractor run --local --verbose && api-documenter markdown -i temp -o doc",
+    "doc:debug": "api-extractor run --local --verbose --diagnostics && api-documenter markdown -i temp -o doc",
+    "trace": "tsc dist/types/index.d.ts --traceResolution > trace.log",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "keywords": [],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "author": "zhouzhou <1372407995@qq.com>",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@microsoft/api-documenter": "^7.22.33",
+    "@microsoft/api-extractor": "^7.36.4",
+    "@types/node": "^20.5.0",
+    "babel": "^6.23.0",
+    "eslint": "^8.47.0",
+    "fast-glob": "^3.3.1",
+    "rollup": "^3.28.0",
+    "rollup-plugin-import-export": "^0.0.1",
+    "typescript": "^5.1.6",
+    "vitepress": "1.0.0-rc.4",
+    "vitest": "^0.34.1",
+    "vue": "^3.3.4"
+  },
+  "dependencies": {
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-terser": "^0.4.3",
+    "rollup-plugin-dts": "^5.3.1",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.4.0",
+    "rollup-plugin-typescript2": "^0.35.0"
+  }
+}
