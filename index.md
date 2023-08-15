@@ -5,13 +5,13 @@ layout: home
 hero:
   name: "VoiUtils"
   text: "TypeScript通用工具函数库"
-  tagline: My great project tagline
+  tagline: 基于Rollup&TypeScript构建的前端项目通用工具函数库
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: 快速入门
       link: /markdown-examples
     - theme: alt
-      text: API Examples
+      text: 在GitHub上查看
       link: /api-examples
 
 features:

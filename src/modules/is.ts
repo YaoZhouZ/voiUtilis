@@ -9,143 +9,143 @@ function is(value: unknown, type: string): boolean {
 }
 
 /**
- * 检查一个值是函数
+ * 检查值value是否是函数
  * @param {unknown} value - 要检查的值
- * @returns 布尔值结果
+ * @returns 如果value为funciton类型,那么返回true,否则返回false
  */
 function isFunction<T = Function>(value: unknown): value is T {
   return is(value, "Function") || is(value, "AsyncFunction");
 }
 
 /**
- * 检查值是否已定义
+ * 检查值value是否已定义
  * @param {T} value - 要检查的值
- * @returns 布尔值结果
+ * @returns 如果value不等于undefined,那么返回true,否则返回false
  */
 function isDef<T = unknown>(value: T): value is T {
   return typeof value !== "undefined";
 }
 
 /**
- * 检查值是否未定义或为空
+ * 检查值value是否未定义
  * @param {T} value - 要检查的值
- * @returns 布尔值结果
+ * @returns 如果value等于undefined,那么返回true,否则返回false
  */
 function isUnDef<T = unknown>(value: T): value is T {
   return !isDef(value);
 }
 
 /**
- * 检查值是否是对象
+ * 检查值value是否是对象
  * @param {any} value - 要检查的值
- * @returns 布尔值结果
+ * @returns 如果value等于object,那么返回true,否则返回false
  */
 function isObject(value: any): value is Record<any, any> {
   return value !== null && is(value, "Object");
 }
 
 /**
- * 检查值是否不是对象
+ * 检查值value是否不是对象
  * @param {any} value - 要检查的值
- * @returns 布尔值结果
+ * @returns 如果value不等于object,那么返回true,否则返回false
  */
 function isNotObject(value: any): boolean {
   return JSON.stringify(value) === "{}";
 }
 
 /**
- * 检查值是否为Date类型。
- * @param {unknown} val - 要检查的值
- * @returns 布尔值结果
+ * 检查值value是否为Date类型
+ * @param {unknown} value - 要检查的值
+ * @returns 如果value等于Data类型,那么返回true,否则返回false
  */
-function isDate(val: unknown): val is Date {
-  return is(val, "Date");
+function isDate(value: unknown): value is Date {
+  return is(value, "Date");
 }
 
 /**
- * 检查值是否为数字类型
- * @param {unknown} val - 要检查的值
- * @returns 布尔值结果
+ * 检查值value是否为number类型
+ * @param {unknown} value - 要检查的值
+ * @returns 如果value等于Number类型,那么返回true,否则返回false
  */
-function isNumber(val: unknown): val is number {
-  return is(val, "Number");
+function isNumber(value: unknown): value is number {
+  return is(value, "Number");
 }
 
 /**
- * 检查值是否是异步函数
- * @param {unknown} val - 要检查的值
- * @returns 布尔值结果
+ * 检查值value是否是异步函数
+ * @param {unknown} value - 要检查的值
+ * @returns 如果value等于Promise类型,那么返回true,否则返回false
  */
-function isAsyncFunction<T = any>(val: unknown): val is () => Promise<T> {
-  return is(val, "AsyncFunction");
+function isAsyncFunction<T = any>(value: unknown): value is () => Promise<T> {
+  return is(value, "AsyncFunction");
 }
 
 /**
- * 检查值是否是Promise对象
- * @param {unknown} val - 要检查的值
- * @returns 布尔值结果
+ * 检查值value是否是Promise对象
+ * @param {unknown} value - 要检查的值
+ * @returns 如果value等于Promise类型,那么返回true,否则返回false
  */
-function isPromise<T = any>(val: unknown): val is Promise<T> {
+function isPromise<T = any>(value: unknown): value is Promise<T> {
   return (
-    is(val, "Promise") &&
-    isObject(val) &&
-    isFunction(val.then) &&
-    isFunction(val.catch)
+    is(value, "Promise") &&
+    isObject(value) &&
+    isFunction(value.then) &&
+    isFunction(value.catch)
   );
 }
 
 /**
- * 检查值是否为字符串类型
- * @param {unknown} val - 要检查的值
- * @returns 布尔值结果
+ * 检查值value是否为string类型
+ * @param {unknown} value - 要检查的值
+ * @returns 如果value等于String类型,那么返回true,否则返回false
  */
-function isString(val: unknown): val is string {
-  return is(val, "String");
+function isString(value: unknown): value is string {
+  return is(value, "String");
 }
 
 /**
- * 检查值是否为布尔类型
- * @param {unknown} val - 要检查的值
- * @returns 布尔值结果
+ * 检查值value是否为boolean类型
+ * @param {unknown} value - 要检查的值
+ * @returns 如果value等于Boolean类型,那么返回true,否则返回false
  */
-function isBoolean(val: unknown): val is boolean {
-  return is(val, "Boolean");
+function isBoolean(value: unknown): value is boolean {
+  return is(value, "Boolean");
 }
 
 /**
- * 检查值是否为数组
- * @param {any} val - 要检查的值
- * @returns 布尔值结果
+ * 检查值value是否为array
+ * @param {any} value - 要检查的值
+ * @returns 如果value等于Array类型,那么返回true,否则返回false
  */
-function isArray(val: any): val is Array<any> {
-  return val && Array.isArray(val);
+function isArray(value: any): value is Array<any> {
+  return value && Array.isArray(value);
 }
 
 /**
- * 检查值是否为空
- * @param {unknown} val - 要检查的值
- * @returns 布尔值结果
+ * 检查值value是否为null
+ * @param {unknown} value - 要检查的值
+ * @returns 如果value等于null类型,那么返回true,否则返回false
  */
-function isNull(val: unknown): val is null {
-  return val === null;
+function isNull(value: unknown): value is null {
+  return value === null;
 }
 
 /**
- * 检查值是否为null且未定义
- * @param {unknown} val - 要检查的值
- * @returns 布尔值结果
+ * 检查值value是否为null且未定义
+ * @param {unknown} value - 要检查的值
+ * @returns 如果value等于null并且等于undefined类型,那么返回true,否则返回false
  */
-function isNullAndUnDef(val: unknown): val is null | undefined {
-  return isUnDef(val) && isNull(val);
+function isNullAndUnDef(value: unknown): value is null | undefined {
+  return isUnDef(value) && isNull(value);
 }
 
 /**
- * 检查值是否为null或未定义
- * @param {unknown} val - 要检查的值
- * @returns 布尔值结果
+ * 检查值value是否为null或未定义
+ * @param {unknown} value - 要检查的值
+ * @returns 如果value等于null或者等于undefined类型,那么返回true,否则返回false
  */
-function isNullOrUnDef(val: unknown): val is null | undefined {
-  return isUnDef(val) || isNull(val);
+function isNullOrUnDef(value: unknown): value is null | undefined {
+  return isUnDef(value) || isNull(value);
 }
 
 export {

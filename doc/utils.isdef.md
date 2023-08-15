@@ -4,7 +4,7 @@
 
 ## isDef() function
 
-检查值是否已定义
+检查值value是否已定义
 
 **Signature:**
 
@@ -22,5 +22,5 @@ declare function isDef<T = unknown>(value: T): value is T;
 
 value is T
 
-{<!-- -->boolean<!-- -->} 布尔值结果
+如果value不等于undefined,那么返回true,否则返回false
 

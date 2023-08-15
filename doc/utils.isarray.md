@@ -4,23 +4,23 @@
 
 ## isArray() function
 
-检查值是否为数组
+检查值value是否为array
 
 **Signature:**
 
 ```typescript
-declare function isArray(val: any): val is Array<any>;
+declare function isArray(value: any): value is Array<any>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  val | any | 要检查的值 |
+|  value | any | 要检查的值 |
 
 **Returns:**
 
-val is Array&lt;any&gt;
+value is Array&lt;any&gt;
 
-{<!-- -->boolean<!-- -->} 布尔值结果
+如果value等于Array类型,那么返回true,否则返回false
 

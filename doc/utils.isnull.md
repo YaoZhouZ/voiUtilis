@@ -4,23 +4,23 @@
 
 ## isNull() function
 
-检查值是否为空
+检查值value是否为null
 
 **Signature:**
 
 ```typescript
-declare function isNull(val: unknown): val is null;
+declare function isNull(value: unknown): value is null;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  val | unknown | 要检查的值 |
+|  value | unknown | 要检查的值 |
 
 **Returns:**
 
-val is null
+value is null
 
-{<!-- -->boolean<!-- -->} 布尔值结果
+如果value等于null类型,那么返回true,否则返回false
 

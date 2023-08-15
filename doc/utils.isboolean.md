@@ -4,23 +4,23 @@
 
 ## isBoolean() function
 
-检查值是否为布尔类型
+检查值value是否为boolean类型
 
 **Signature:**
 
 ```typescript
-declare function isBoolean(val: unknown): val is boolean;
+declare function isBoolean(value: unknown): value is boolean;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  val | unknown | 要检查的值 |
+|  value | unknown | 要检查的值 |
 
 **Returns:**
 
-val is boolean
+value is boolean
 
-{<!-- -->boolean<!-- -->} 布尔值结果
+如果value等于Boolean类型,那么返回true,否则返回false
 

@@ -4,23 +4,23 @@
 
 ## isAsyncFunction() function
 
-检查值是否是异步函数
+检查值value是否是异步函数
 
 **Signature:**
 
 ```typescript
-declare function isAsyncFunction<T = any>(val: unknown): val is () => Promise<T>;
+declare function isAsyncFunction<T = any>(value: unknown): value is () => Promise<T>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  val | unknown | 要检查的值 |
+|  value | unknown | 要检查的值 |
 
 **Returns:**
 
-val is () =&gt; Promise&lt;T&gt;
+value is () =&gt; Promise&lt;T&gt;
 
-{<!-- -->boolean<!-- -->} 布尔值结果
+如果value等于Promise类型,那么返回true,否则返回false
 

@@ -233,7 +233,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@voi/utils!is:function(1)",
-          "docComment": "/**\n * 检查值value是否属于特定类型type\n *\n * @param value - 要检查的值\n *\n * @param type - 一个字符串，表示要检查的值的类型\n *\n * @returns {boolean} 如果value为type类型,那么返回true,否则返回false\n */\n",
+          "docComment": "/**\n * 检查值value是否属于特定类型type\n *\n * @param value - 要检查的值\n *\n * @param type - 一个字符串，表示要检查的值的类型\n *\n * @returns 如果value为type类型,那么返回true,否则返回false\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -294,11 +294,11 @@
         {
           "kind": "Function",
           "canonicalReference": "@voi/utils!isArray:function(1)",
-          "docComment": "/**\n * 检查值是否为数组\n *\n * @param val - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
+          "docComment": "/**\n * 检查值value是否为array\n *\n * @param value - 要检查的值\n *\n * @returns 如果value等于Array类型,那么返回true,否则返回false\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "declare function isArray(val: "
+              "text": "declare function isArray(value: "
             },
             {
               "kind": "Content",
@@ -310,8 +310,8 @@
             },
             {
               "kind": "Reference",
-              "text": "val",
-              "canonicalReference": "@voi/utils!~val"
+              "text": "value",
+              "canonicalReference": "@voi/utils!~value"
             },
             {
               "kind": "Content",
@@ -340,7 +340,7 @@
           "overloadIndex": 1,
           "parameters": [
             {
-              "parameterName": "val",
+              "parameterName": "value",
               "parameterTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 2
@@ -353,7 +353,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@voi/utils!isAsyncFunction:function(1)",
-          "docComment": "/**\n * 检查值是否是异步函数\n *\n * @param val - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
+          "docComment": "/**\n * 检查值value是否是异步函数\n *\n * @param value - 要检查的值\n *\n * @returns 如果value等于Promise类型,那么返回true,否则返回false\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -365,7 +365,7 @@
             },
             {
               "kind": "Content",
-              "text": ">(val: "
+              "text": ">(value: "
             },
             {
               "kind": "Content",
@@ -377,8 +377,8 @@
             },
             {
               "kind": "Reference",
-              "text": "val",
-              "canonicalReference": "@voi/utils!~val"
+              "text": "value",
+              "canonicalReference": "@voi/utils!~value"
             },
             {
               "kind": "Content",
@@ -407,7 +407,7 @@
           "overloadIndex": 1,
           "parameters": [
             {
-              "parameterName": "val",
+              "parameterName": "value",
               "parameterTypeTokenRange": {
                 "startIndex": 3,
                 "endIndex": 4
@@ -433,11 +433,11 @@
         {
           "kind": "Function",
           "canonicalReference": "@voi/utils!isBoolean:function(1)",
-          "docComment": "/**\n * 检查值是否为布尔类型\n *\n * @param val - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
+          "docComment": "/**\n * 检查值value是否为boolean类型\n *\n * @param value - 要检查的值\n *\n * @returns 如果value等于Boolean类型,那么返回true,否则返回false\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "declare function isBoolean(val: "
+              "text": "declare function isBoolean(value: "
             },
             {
               "kind": "Content",
@@ -449,8 +449,8 @@
             },
             {
               "kind": "Reference",
-              "text": "val",
-              "canonicalReference": "@voi/utils!~val"
+              "text": "value",
+              "canonicalReference": "@voi/utils!~value"
             },
             {
               "kind": "Content",
@@ -470,7 +470,7 @@
           "overloadIndex": 1,
           "parameters": [
             {
-              "parameterName": "val",
+              "parameterName": "value",
               "parameterTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 2
@@ -483,11 +483,11 @@
         {
           "kind": "Function",
           "canonicalReference": "@voi/utils!isDate:function(1)",
-          "docComment": "/**\n * 检查值是否为Date类型。\n *\n * @param val - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
+          "docComment": "/**\n * 检查值value是否为Date类型\n *\n * @param value - 要检查的值\n *\n * @returns 如果value等于Data类型,那么返回true,否则返回false\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "declare function isDate(val: "
+              "text": "declare function isDate(value: "
             },
             {
               "kind": "Content",
@@ -499,8 +499,8 @@
             },
             {
               "kind": "Reference",
-              "text": "val",
-              "canonicalReference": "@voi/utils!~val"
+              "text": "value",
+              "canonicalReference": "@voi/utils!~value"
             },
             {
               "kind": "Content",
@@ -525,7 +525,7 @@
           "overloadIndex": 1,
           "parameters": [
             {
-              "parameterName": "val",
+              "parameterName": "value",
               "parameterTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 2
@@ -538,7 +538,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@voi/utils!isDef:function(1)",
-          "docComment": "/**\n * 检查值是否已定义\n *\n * @param value - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
+          "docComment": "/**\n * 检查值value是否已定义\n *\n * @param value - 要检查的值\n *\n * @returns 如果value不等于undefined,那么返回true,否则返回false\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -609,7 +609,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@voi/utils!isFunction:function(1)",
-          "docComment": "/**\n * 检查一个值是函数\n *\n * @param value - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
+          "docComment": "/**\n * 检查值value是否是函数\n *\n * @param value - 要检查的值\n *\n * @returns 如果value为funciton类型,那么返回true,否则返回false\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -681,7 +681,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@voi/utils!isNotObject:function(1)",
-          "docComment": "/**\n * 检查值是否不是对象\n *\n * @param value - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
+          "docComment": "/**\n * 检查值value是否不是对象\n *\n * @param value - 要检查的值\n *\n * @returns 如果value不等于object,那么返回true,否则返回false\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -726,11 +726,11 @@
         {
           "kind": "Function",
           "canonicalReference": "@voi/utils!isNull:function(1)",
-          "docComment": "/**\n * 检查值是否为空\n *\n * @param val - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
+          "docComment": "/**\n * 检查值value是否为null\n *\n * @param value - 要检查的值\n *\n * @returns 如果value等于null类型,那么返回true,否则返回false\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "declare function isNull(val: "
+              "text": "declare function isNull(value: "
             },
             {
               "kind": "Content",
@@ -742,8 +742,8 @@
             },
             {
               "kind": "Reference",
-              "text": "val",
-              "canonicalReference": "@voi/utils!~val"
+              "text": "value",
+              "canonicalReference": "@voi/utils!~value"
             },
             {
               "kind": "Content",
@@ -763,7 +763,7 @@
           "overloadIndex": 1,
           "parameters": [
             {
-              "parameterName": "val",
+              "parameterName": "value",
               "parameterTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 2
@@ -776,11 +776,11 @@
         {
           "kind": "Function",
           "canonicalReference": "@voi/utils!isNullAndUnDef:function(1)",
-          "docComment": "/**\n * 检查值是否为null且未定义\n *\n * @param val - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
+          "docComment": "/**\n * 检查值value是否为null且未定义\n *\n * @param value - 要检查的值\n *\n * @returns 如果value等于null并且等于undefined类型,那么返回true,否则返回false\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "declare function isNullAndUnDef(val: "
+              "text": "declare function isNullAndUnDef(value: "
             },
             {
               "kind": "Content",
@@ -792,8 +792,8 @@
             },
             {
               "kind": "Reference",
-              "text": "val",
-              "canonicalReference": "@voi/utils!~val"
+              "text": "value",
+              "canonicalReference": "@voi/utils!~value"
             },
             {
               "kind": "Content",
@@ -813,7 +813,7 @@
           "overloadIndex": 1,
           "parameters": [
             {
-              "parameterName": "val",
+              "parameterName": "value",
               "parameterTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 2
@@ -826,11 +826,11 @@
         {
           "kind": "Function",
           "canonicalReference": "@voi/utils!isNullOrUnDef:function(1)",
-          "docComment": "/**\n * 检查值是否为null或未定义\n *\n * @param val - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
+          "docComment": "/**\n * 检查值value是否为null或未定义\n *\n * @param value - 要检查的值\n *\n * @returns 如果value等于null或者等于undefined类型,那么返回true,否则返回false\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "declare function isNullOrUnDef(val: "
+              "text": "declare function isNullOrUnDef(value: "
             },
             {
               "kind": "Content",
@@ -842,8 +842,8 @@
             },
             {
               "kind": "Reference",
-              "text": "val",
-              "canonicalReference": "@voi/utils!~val"
+              "text": "value",
+              "canonicalReference": "@voi/utils!~value"
             },
             {
               "kind": "Content",
@@ -863,7 +863,7 @@
           "overloadIndex": 1,
           "parameters": [
             {
-              "parameterName": "val",
+              "parameterName": "value",
               "parameterTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 2
@@ -876,11 +876,11 @@
         {
           "kind": "Function",
           "canonicalReference": "@voi/utils!isNumber:function(1)",
-          "docComment": "/**\n * 检查值是否为数字类型\n *\n * @param val - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
+          "docComment": "/**\n * 检查值value是否为number类型\n *\n * @param value - 要检查的值\n *\n * @returns 如果value等于Number类型,那么返回true,否则返回false\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "declare function isNumber(val: "
+              "text": "declare function isNumber(value: "
             },
             {
               "kind": "Content",
@@ -892,8 +892,8 @@
             },
             {
               "kind": "Reference",
-              "text": "val",
-              "canonicalReference": "@voi/utils!~val"
+              "text": "value",
+              "canonicalReference": "@voi/utils!~value"
             },
             {
               "kind": "Content",
@@ -913,7 +913,7 @@
           "overloadIndex": 1,
           "parameters": [
             {
-              "parameterName": "val",
+              "parameterName": "value",
               "parameterTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 2
@@ -926,7 +926,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@voi/utils!isObject:function(1)",
-          "docComment": "/**\n * 检查值是否是对象\n *\n * @param value - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
+          "docComment": "/**\n * 检查值value是否是对象\n *\n * @param value - 要检查的值\n *\n * @returns 如果value等于object,那么返回true,否则返回false\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -985,7 +985,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@voi/utils!isPromise:function(1)",
-          "docComment": "/**\n * 检查值是否是Promise对象\n *\n * @param val - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
+          "docComment": "/**\n * 检查值value是否是Promise对象\n *\n * @param value - 要检查的值\n *\n * @returns 如果value等于Promise类型,那么返回true,否则返回false\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
@@ -997,7 +997,7 @@
             },
             {
               "kind": "Content",
-              "text": ">(val: "
+              "text": ">(value: "
             },
             {
               "kind": "Content",
@@ -1009,8 +1009,8 @@
             },
             {
               "kind": "Reference",
-              "text": "val",
-              "canonicalReference": "@voi/utils!~val"
+              "text": "value",
+              "canonicalReference": "@voi/utils!~value"
             },
             {
               "kind": "Content",
@@ -1039,7 +1039,7 @@
           "overloadIndex": 1,
           "parameters": [
             {
-              "parameterName": "val",
+              "parameterName": "value",
               "parameterTypeTokenRange": {
                 "startIndex": 3,
                 "endIndex": 4
@@ -1065,11 +1065,11 @@
         {
           "kind": "Function",
           "canonicalReference": "@voi/utils!isString:function(1)",
-          "docComment": "/**\n * 检查值是否为字符串类型\n *\n * @param val - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
+          "docComment": "/**\n * 检查值value是否为string类型\n *\n * @param value - 要检查的值\n *\n * @returns 如果value等于String类型,那么返回true,否则返回false\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "declare function isString(val: "
+              "text": "declare function isString(value: "
             },
             {
               "kind": "Content",
@@ -1081,8 +1081,8 @@
             },
             {
               "kind": "Reference",
-              "text": "val",
-              "canonicalReference": "@voi/utils!~val"
+              "text": "value",
+              "canonicalReference": "@voi/utils!~value"
             },
             {
               "kind": "Content",
@@ -1102,7 +1102,7 @@
           "overloadIndex": 1,
           "parameters": [
             {
-              "parameterName": "val",
+              "parameterName": "value",
               "parameterTypeTokenRange": {
                 "startIndex": 1,
                 "endIndex": 2
@@ -1115,7 +1115,7 @@
         {
           "kind": "Function",
           "canonicalReference": "@voi/utils!isUnDef:function(1)",
-          "docComment": "/**\n * 检查值是否未定义或为空\n *\n * @param value - 要检查的值\n *\n * @returns {boolean} 布尔值结果\n */\n",
+          "docComment": "/**\n * 检查值value是否未定义\n *\n * @param value - 要检查的值\n *\n * @returns 如果value等于undefined,那么返回true,否则返回false\n */\n",
           "excerptTokens": [
             {
               "kind": "Content",

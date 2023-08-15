@@ -4,23 +4,23 @@
 
 ## isPromise() function
 
-检查值是否是Promise对象
+检查值value是否是Promise对象
 
 **Signature:**
 
 ```typescript
-declare function isPromise<T = any>(val: unknown): val is Promise<T>;
+declare function isPromise<T = any>(value: unknown): value is Promise<T>;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  val | unknown | 要检查的值 |
+|  value | unknown | 要检查的值 |
 
 **Returns:**
 
-val is Promise&lt;T&gt;
+value is Promise&lt;T&gt;
 
-{<!-- -->boolean<!-- -->} 布尔值结果
+如果value等于Promise类型,那么返回true,否则返回false
 

@@ -4,7 +4,7 @@
 
 ## isFunction() function
 
-检查一个值是函数
+检查值value是否是函数
 
 **Signature:**
 
@@ -22,5 +22,5 @@ declare function isFunction<T = Function>(value: unknown): value is T;
 
 value is T
 
-{<!-- -->boolean<!-- -->} 布尔值结果
+如果value为funciton类型,那么返回true,否则返回false
 

@@ -4,7 +4,7 @@
 
 ## isUnDef() function
 
-检查值是否未定义或为空
+检查值value是否未定义
 
 **Signature:**
 
@@ -22,5 +22,5 @@ declare function isUnDef<T = unknown>(value: T): value is T;
 
 value is T
 
-{<!-- -->boolean<!-- -->} 布尔值结果
+如果value等于undefined,那么返回true,否则返回false
 

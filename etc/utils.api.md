@@ -11,16 +11,16 @@ export function arr_unique<T>(arr: T[]): T[];
 export function is(value: unknown, type: string): boolean;
 
 // @public
-export function isArray(val: any): val is Array<any>;
+export function isArray(value: any): value is Array<any>;
 
 // @public
-export function isAsyncFunction<T = any>(val: unknown): val is () => Promise<T>;
+export function isAsyncFunction<T = any>(value: unknown): value is () => Promise<T>;
 
 // @public
-export function isBoolean(val: unknown): val is boolean;
+export function isBoolean(value: unknown): value is boolean;
 
 // @public
-export function isDate(val: unknown): val is Date;
+export function isDate(value: unknown): value is Date;
 
 // @public
 export function isDef<T = unknown>(value: T): value is T;
@@ -32,25 +32,25 @@ export function isFunction<T = Function>(value: unknown): value is T;
 export function isNotObject(value: any): boolean;
 
 // @public
-export function isNull(val: unknown): val is null;
+export function isNull(value: unknown): value is null;
 
 // @public
-export function isNullAndUnDef(val: unknown): val is null | undefined;
+export function isNullAndUnDef(value: unknown): value is null | undefined;
 
 // @public
-export function isNullOrUnDef(val: unknown): val is null | undefined;
+export function isNullOrUnDef(value: unknown): value is null | undefined;
 
 // @public
-export function isNumber(val: unknown): val is number;
+export function isNumber(value: unknown): value is number;
 
 // @public
 export function isObject(value: any): value is Record<any, any>;
 
 // @public
-export function isPromise<T = any>(val: unknown): val is Promise<T>;
+export function isPromise<T = any>(value: unknown): value is Promise<T>;
 
 // @public
-export function isString(val: unknown): val is string;
+export function isString(value: unknown): value is string;
 
 // @public
 export function isUnDef<T = unknown>(value: T): value is T;

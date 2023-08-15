@@ -4,7 +4,7 @@
 
 ## isObject() function
 
-检查值是否是对象
+检查值value是否是对象
 
 **Signature:**
 
@@ -22,5 +22,5 @@ declare function isObject(value: any): value is Record<any, any>;
 
 value is Record&lt;any, any&gt;
 
-{<!-- -->boolean<!-- -->} 布尔值结果
+如果value等于object,那么返回true,否则返回false
 

@@ -4,23 +4,23 @@
 
 ## isNullOrUnDef() function
 
-检查值是否为null或未定义
+检查值value是否为null或未定义
 
 **Signature:**
 
 ```typescript
-declare function isNullOrUnDef(val: unknown): val is null | undefined;
+declare function isNullOrUnDef(value: unknown): value is null | undefined;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  val | unknown | 要检查的值 |
+|  value | unknown | 要检查的值 |
 
 **Returns:**
 
-val is null \| undefined
+value is null \| undefined
 
-{<!-- -->boolean<!-- -->} 布尔值结果
+如果value等于null或者等于undefined类型,那么返回true,否则返回false
 

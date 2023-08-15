@@ -4,23 +4,23 @@
 
 ## isNumber() function
 
-检查值是否为数字类型
+检查值value是否为number类型
 
 **Signature:**
 
 ```typescript
-declare function isNumber(val: unknown): val is number;
+declare function isNumber(value: unknown): value is number;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  val | unknown | 要检查的值 |
+|  value | unknown | 要检查的值 |
 
 **Returns:**
 
-val is number
+value is number
 
-{<!-- -->boolean<!-- -->} 布尔值结果
+如果value等于Number类型,那么返回true,否则返回false
 

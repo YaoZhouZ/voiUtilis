@@ -4,7 +4,7 @@
 
 ## isNotObject() function
 
-检查值是否不是对象
+检查值value是否不是对象
 
 **Signature:**
 
@@ -22,5 +22,5 @@ declare function isNotObject(value: any): boolean;
 
 boolean
 
-{<!-- -->boolean<!-- -->} 布尔值结果
+如果value不等于object,那么返回true,否则返回false
 

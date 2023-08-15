@@ -23,5 +23,5 @@ declare function is(value: unknown, type: string): boolean;
 
 boolean
 
-{<!-- -->boolean<!-- -->} 如果value为type类型,那么返回true,否则返回false
+如果value为type类型,那么返回true,否则返回false
 

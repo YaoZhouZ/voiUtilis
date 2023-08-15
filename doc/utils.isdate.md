@@ -4,23 +4,23 @@
 
 ## isDate() function
 
-检查值是否为Date类型。
+检查值value是否为Date类型
 
 **Signature:**
 
 ```typescript
-declare function isDate(val: unknown): val is Date;
+declare function isDate(value: unknown): value is Date;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  val | unknown | 要检查的值 |
+|  value | unknown | 要检查的值 |
 
 **Returns:**
 
-val is Date
+value is Date
 
-{<!-- -->boolean<!-- -->} 布尔值结果
+如果value等于Data类型,那么返回true,否则返回false
 

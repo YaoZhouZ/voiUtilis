@@ -4,23 +4,23 @@
 
 ## isString() function
 
-检查值是否为字符串类型
+检查值value是否为string类型
 
 **Signature:**
 
 ```typescript
-declare function isString(val: unknown): val is string;
+declare function isString(value: unknown): value is string;
 ```
 
 ## Parameters
 
 |  Parameter | Type | Description |
 |  --- | --- | --- |
-|  val | unknown | 要检查的值 |
+|  value | unknown | 要检查的值 |
 
 **Returns:**
 
-val is string
+value is string
 
-{<!-- -->boolean<!-- -->} 布尔值结果
+如果value等于String类型,那么返回true,否则返回false
 
